@@ -26,8 +26,9 @@ def get_commit_range():
     return input("Enter commit hash or range to cherry-pick (e.g., abc123 or abc123^..abc123): ")
 
 def extract_task_id(branch_name):
-    match = re.search(r'task-(\d+)', branch_name)
+    match = re.search(r'(?:task|ticket)-(\d+)', branch_name)
     return match.group(1) if match else None
+
 
 def main():
     current_branch = get_current_branch()
