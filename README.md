@@ -25,8 +25,18 @@ This Python script automates that workflow:
 1. From your task branch (e.g. `17.0-task-1234`), run:
 
    ```bash
+   nano propagate_task.py
+
+2. Paste the script into the file and save it
+- Press ```CTRL+X```
+- Press ```Y``` to confirm saving
+- Press ```ENTER``` to write the file
+
+3. Then run:
+
+   ```bash
    python3 propagate_task.py
 
-2. Follow the prompts:
+4. Follow the prompts:
 - Select which base branches to apply the task to
 - Provide the commit hash or range to cherry-pick
